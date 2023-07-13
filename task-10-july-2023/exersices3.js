@@ -37,9 +37,10 @@ for (var i = 0; i <=10;i++)
 var str="1";
 for (var i =2; i<=9;i++){
    console.log( str);
-   str +=`${i}`;
+   str +=` ${i}`;
 
 };
+
  /* 
 
  
@@ -52,9 +53,13 @@ let str2 = "dont know why";
 for (let i = 0; i <= (str2.length)-1; i++) {
    
    if (str2[i]=="y" ){
-      check="yes"
-   }
+      check="yes";
+      console.log("yse");
+   break;   }
 
 }
+
+if(check=="no"){
 console.log(check);
+};
 
