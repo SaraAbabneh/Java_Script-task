@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #form_box{
+
+            width: 80%;
+            margin: auto;
+            margin-top: 40px;
+            min-height: min-content;
+           
+        }
+
+        #output-text{
+            border: 1px solid black;
+            min-height:min-content
+
+        }
+
+        .form-check-input
+        {
+            margin: 0 2px 2px 0px;
+        
+        }
+    </style>
+
+</head>
+  <body>
+
+   
+
+    <div id="box" > Can I help you ? </div>
+
+
+    <form action="#">
+        <label for="country">Select a country:</label>
+        <select name="country" id="country" onchange="changeFlag(this);">
+            <option value="Jordan">Jordan</option>
+            <option value="Palestine">Palestine</option>
+            <option value="Kuwait">Kuwait</option>
+            <option value="Qatar">Qatar</option>
+        </select>
+    </form>
+    
+    <div id="image">
+        <img src="Jordan.jpg" alt="Flag" id="flagImage">
+    </div>
+    
+
+
+    <div id="form_box">
+        <form class="form-inline" action="#">
+            <select name=" font family" id="font family" onchange="changeFontFamily (this);" style="margin: 0 2px 2px 0px;">
+          
+                <option class="form-control" value="Arial">Arial</option>
+                <option class="form-control" value="fantasy">Fantasy</option>
+                <option class="form-control" value="cursive">cursive</option>
+
+            </select>
+            <select name="Font size" id="Font size" onchange="changeFontsize (this);" style="margin: 0 5px 2px 0px">
+                
+                <option class="form-control" value="10px"> 10px </option>
+                <option class="form-control" value="60px"> 60px </option>
+            </select>
+    
+    
+         
+            <div class="form-check">
+                <form>
+                  <input class="form-check-input" type="checkbox" value="italic" onchange="changeFontStyle(this);"> Italic
+                  <input class="form-check-input" type="checkbox" value="bold" onchange="changeFontWeight(this);"> Bold
+                  <input class="form-check-input" type="checkbox" value="underline" onchange="changeTextDecoration(this);"> Underline
+                </form>
+              </div>
+              
+            
+        </form>
+
+          <div id="output-text">
+            hi hiihojof
+            ejfa-pull-left
+          </div>
+    </div>
+
+    <script src="taske2.js"></script>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+    
