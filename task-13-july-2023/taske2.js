@@ -1,15 +1,15 @@
 
 
 const text = document.getElementById("box");
-let isTextChanged = false;
+let TextChanged = false;
 
 function changeText() {
-  if (isTextChanged) {
+  if (TextChanged) {
     text.innerHTML = "Can I help you ?";
-    isTextChanged = false;
+    TextChanged = false;
   } else {
     text.innerHTML = "Hello World!";
-    isTextChanged = true;
+    TextChanged = true;
   }
 }
 
