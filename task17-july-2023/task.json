@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Sara",
+      "Age": "25",
+      "Mjor": "Civil Engineering",
+      "University": "AL-Yarmouk",
+      "image":"http://"
+    },
+
+    {
+      "name": "Marah",
+      "Age": "26",
+      "Mjor": "Power Engineering",
+      "University": "AL-Huson",
+      "image":"http://"
+    },
+
+    {
+      "name": "Wala",
+      "Age": "21",
+      "Mjor": "Arabic",
+      "University": "AL-Yarmouk",
+      "image":"http://"
+    },
+
+    {
+      "name": "Ali",
+      "Age": "24",
+      "Mjor": "Art",
+      "University": "JUST",
+      "image":"http://"
+    }
+]

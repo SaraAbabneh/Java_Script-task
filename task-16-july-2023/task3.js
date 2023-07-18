@@ -36,9 +36,9 @@
 for (let i = 0; i < inputs.length; i++) {
   const input = inputs[i];
 
-  if (localStorage.getItem(input.id)) {
-    input.value = localStorage.getItem(input.id);
-  }
+  // if (localStorage.getItem(input.id)) {
+  //   input.value = localStorage.getItem(input.id);
+  // }
 
   input.onkeyup = function() {
     localStorage.setItem(input.id, input.value);
@@ -46,9 +46,9 @@ for (let i = 0; i < inputs.length; i++) {
 }
 const birthDateInput = document.getElementById('Bdate');
 const birthDateValue = birthDateInput.value;
-if (localStorage.getItem(birthDateInput.id)) {
-    birthDateInput.value = localStorage.getItem(birthDateInput.id);
-  }
+// if (localStorage.getItem(birthDateInput.id)) {
+//     // birthDateInput.value = localStorage.getItem(birthDateInput.id);
+//   }
   birthDateInput.addEventListener('input', function() {
     localStorage.setItem(birthDateInput.id, birthDateInput.value);
   });
