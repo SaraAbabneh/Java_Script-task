@@ -65,7 +65,10 @@ function additem() {
 }
 function removeitem(buttonElement) {
   let taskid = parseInt(buttonElement.getAttribute("data-taskid"));
-  data = data.filter((task) => task.id !== taskid); // Filter out the task to be removed
+
+  // console.log(taskid);
+
+  data = data.filter((task) => task.id !== taskid);
   let taskString = JSON.stringify(data);
   localStorage.setItem("tasks", taskString);
   drow(data);
@@ -129,84 +132,6 @@ function searchTasks() {
 
 document.getElementById("search_btn").addEventListener("click", searchTasks);
 
-// Add an event listener for the input field to perform real-time search
 document.getElementById("search_input").addEventListener("input", searchTasks);
 
 document.getElementById("search_btn").addEventListener("click", searchTasks);
-
-// const addBtn = document.querySelector("#add-btn");
-// const tasksContainer = document.querySelector("#tasks");
-// const error = document.getElementById("error");
-// const countValue = document.querySelector(".count-value");
-// let taskCount = 0;
-
-// const displayCount = (taskCount) => {
-//   countValue.innerText = task;
-// };
-
-// const addTask = () => {
-//   const taskName = newTas;
-//   InputDeviceInfo.value.trim();
-//   error.styke.display = "none";
-//   if (!taskName) {
-//     setTimeout(() => {
-//       error.style.display = "block";
-//     }, 200);
-//     return;
-//   }
-//   const task = `
-//     <div class="task">
-//         <input type="checkbox"class="task-check">
-//         <span class="taskname">${taskName}</span>
-
-//         <button class="edit">
-//         <i class="fa-solid fa-pen-to-square"></i>
-//         </button>
-
-//         <button class="delete">
-//         <i class="fa-solid fa-trash "></i>
-//         </button>
-//     </div>`;
-
-//   tasksContainer.insertAdjacentHTML("beforeend", task);
-
-//   const deleteButtons = document.querySelectorAll(".delete");
-//   deleteButtons.forEach((button) => {
-//     button.onclick = () => {
-//       button.parentNode.remove();
-//       taskCount = -1;
-//       displayCount(taskCount);
-//     };
-//   });
-
-//   const editButtons = document.querySelectorAll(".edit");
-//   editButtons.forEach((editBtn) => {
-//     editBtn.onclick = (e) => {
-//       let targetElement = e.target;
-//       if (!(e.target.className == "edit")) {
-//         targetElement = e.target.parrentElement;
-//       }
-//       newTaskInput.value = targetElement.previousElementSibling?.innerText;
-//       targetElement.parentNode.remove();
-//       taskCount -= 1;
-//       displayCount(taskCount);
-//     };
-//   });
-//   const tasksCheck = document.querySelectorAll(".task-check");
-//   tasksCheck.forEach((checkBox) => {
-//     checkBox.onChange = () => {
-//       checkBox.nextElementSilbling.classList.toggle("completed");
-//       if (checkBox.checked) {
-//         taskCount -= 1;
-//       } else {
-//         taskCount += 1;
-//       }
-//       displayCount(taskCount);
-//     };
-//   });
-//   taskCount += 1;
-//   displayCount(taskCount);
-//   newTaskInput.value = "";
-
-//   addBtn.addEventListener("click", addTask);
-// };
