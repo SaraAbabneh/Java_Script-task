@@ -6,7 +6,7 @@
 
 body{
     height: 100vh;
-    background: linear-gradient(#ffd55c 50%, #5a95ff 50%);
+    background: linear-gradient(#ffd55c 50%, #a3bcea 50%);
 }
 
 .app{
@@ -26,14 +26,14 @@ body{
     border-radius: 0.8em;
 }
 
-#wrapper{
+#wrapper ,#tasks{
     position: relative;
     display: grid;
     grid-template-columns: 8fr 4fr;
     gap: 1em;
 }
 
-#wrapper input {
+#wrapper input,#tasks input  {
     width: 100%;
     background-color: transparent;
     color : #111111;
@@ -43,19 +43,19 @@ body{
     padding: 1em 0.5em;
 }
 
-#wrapper input:focus{
+#wrapper input:focus,#tasks input:focus{
     outline:none ;
     border-color: #5a95ff;
 }
 
-#wrapper button {
-    position: relative;
+#wrapper button,#tasks button {
+    /* position: relative; */
     border-radius: 0.5em;
     font-weight: 500;
     font-size: 1em;
     background-color: #5a95ff;
     border: none;
-    outline: none;
+    /* outline: none; */
     color: #ffffff;
     cursor: pointer;
 }
@@ -107,3 +107,12 @@ body{
     margin: 10px 0 ;
     
 }
+
+#tasks button {
+  
+    min-width: 80px;
+    min-height: 25px;
+    margin-top: 5px;
+ 
+}
+
